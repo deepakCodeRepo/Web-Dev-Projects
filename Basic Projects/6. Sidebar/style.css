@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1.5rem;
+  background-color: rgb(203, 225, 225);
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  display: none;
+}
+/* /TODO: ADD SMOOTH TRANSITION TO THE SIDEBAR */
+.show-sidebar {
+  background-color: white;
+  height: 100vh;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 5px black;
+  transition: all 0.5s linear;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+#title {
+  text-shadow: 0px 0px 5px black;
+  white-space: nowrap;
+}
+#title-r {
+  color: hsl(205, 78%, 60%);
+}
+.fa-times {
+  color: rgb(200, 4, 4);
+}
+.fa-times:hover {
+  color: rgb(253, 68, 68);
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  0% {
+    transform: rotate(0);
+  }
+}
+.nav-links {
+  padding: 0;
+  margin: 0;
+}
+.main-links {
+  height: 70vh;
+  display: grid;
+  grid-template-rows: 4rem 4rem 4rem 4rem;
+}
+.main-links li {
+  list-style-type: none;
+}
+.main-links li a {
+  padding: 0.8em;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  color: hsl(210, 22%, 49%);
+  transition: 0.2s;
+}
+.main-links li a:hover {
+  background-color: hsl(205, 78%, 60%);
+  color: white;
+  transition: 0.5s;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  flex-direction: row;
+}
+.social-links li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.social-links li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.2em;
+  margin: 0.5em;
+}
+.social-links li a i {
+  color: hsl(205, 78%, 60%);
+}
+.social-links li a i:hover {
+  color: hsl(205, 93%, 71%);
+}
+.fa-bars {
+  padding: 0.5em;
+  margin: 0.5em;
+  margin-right: 2em;
+  color: hsl(205, 78%, 60%);
+  font-size: 2rem;
+  position: fixed;
+  left: 87rem;
+  right: 100px;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.fa-bars:hover {
+  color: hsl(205, 100%, 70%);
+  transition: 0.5s;
+}

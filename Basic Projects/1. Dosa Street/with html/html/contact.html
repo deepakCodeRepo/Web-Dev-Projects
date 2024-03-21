@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us-DS</title>
+    <link rel="stylesheet" href="/with html/css/style.css" />
+  </head>
+  <body>
+    <header id="top">
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="/with html/html/home.html">Home</a></li>
+          <li>
+            <a href="/with html/html/home.html#about-ds">About Dosa Street</a>
+          </li>
+          <li><a href="/with html/html/home.html#our-menu">Our Menu</a></li>
+          <li><a href="/with html/html/hours.html">Store Hours</a></li>
+        </ul>
+      </nav>
+      <figure>
+        <img
+          src="../img/dosa-img2.jpg"
+          alt="Dosa Street"
+          width="400"
+          height="250"
+        />
+        <figcaption>Classic Dosa!</figcaption>
+      </figure>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h2>Our Contact Form</h2>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send us a Message!</legend>
+            <p>
+              <label for="your-name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="your-name"
+                placeholder="your name"
+              />
+            </p>
+
+            <p>
+              <label for="your-email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="your-email"
+                placeholder="your email"
+              />
+            </p>
+
+            <p>
+              <label for="your-msg">Your Message:</label>
+              <br />
+              <textarea
+                name="message"
+                id="your-msg"
+                cols="30"
+                rows="10"
+                placeholder="type your message here"
+              ></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <section>
+        <h2>Our Location</h2>
+        <address>
+          #21 5th Block 11th Cross<br />Jayanagar Bangalore <br />
+          Phone: <a href="tel:+5555555555">555-555-5555</a>
+        </address>
+        <br />
+        <a href="#top">Back To Top</a>
+      </section>
+      <hr />
+    </main>
+    <footer>
+      <p>Copyright &#169; Dosa Street</p>
+    </footer>
+  </body>
+</html>

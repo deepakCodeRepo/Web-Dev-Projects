@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 1rem;
+}
+body {
+  font-size: 2rem;
+}
+header {
+  padding: 0.5rem;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+}
+h3 {
+  color: chocolate;
+}
+.choice:hover {
+  color: cadetblue;
+  border-bottom: 2px solid cadetblue;
+  cursor: pointer;
+}
+#main-bg {
+  background-color: palevioletred;
+  height: 43.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#bg-text {
+  font-size: larger;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+}
+#color-name {
+  color: aqua;
+}
+#bg-btn {
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+#bg-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

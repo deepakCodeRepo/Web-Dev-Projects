@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 5rem;
+  background-color: rgb(152, 152, 152);
+}
+.tvb {
+  height: 47rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.value {
+  font-size: 8rem;
+  font-weight: 400;
+}
+.btn {
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
