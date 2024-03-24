@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1.5rem;
+  background-color: hsl(0, 1%, 82%);
+}
+h1 {
+  padding: 0.5em;
+}
+.title {
+  margin-bottom: 3em;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: fit-content;
+}
+.img-tab-container {
+  display: flex;
+  margin-left: 15rem;
+  margin-bottom: 8rem;
+}
+.image {
+  display: none;
+}
+.img-tab-container img {
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+}
+.tab-text-container {
+  width: 38%;
+  background-color: white;
+  box-shadow: 0 0 3px black;
+  border-radius: 10px;
+  margin-left: 1.5em;
+}
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tabs div {
+  text-align: center;
+  flex-grow: 1;
+  padding: 0.5em;
+  font-size: 1.3rem;
+  letter-spacing: 0.25rem;
+  background-color: hsl(210, 25%, 91%);
+}
+.tabs div:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+.tabs div:nth-child(3) {
+  border-top-right-radius: 10px;
+}
+.tabs div:hover {
+  background-color: hsl(205, 100%, 96%);
+  color: #49a6e9;
+  cursor: pointer;
+}
+.texts h4 {
+  margin-top: 1em;
+  padding: 0.5em;
+  font-size: 1.3rem;
+  letter-spacing: 0.25rem;
+}
+.texts p {
+  padding: 0.5em;
+  color: hsl(210, 22%, 49%);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.text {
+  display: none;
+}
