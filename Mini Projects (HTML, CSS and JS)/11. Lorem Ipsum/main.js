@@ -2,12 +2,16 @@ let btn = document.querySelector(".btn");
 let paragraph = document.querySelector(".paragraphs");
 
 btn.addEventListener("click", () => {
-  let value = document.querySelector(".input").value;
-
+  let value = parseInt(document.querySelector(".input").value);
+  console.log(value);
   removeParagraph();
 
-  for (let index = 1; index <= value; index++) {
+  if (isNaN(value) || value <= 0) {
     displayParagraph(getParagraph());
+  } else {
+    for (let index = 1; index <= value; index++) {
+      displayParagraph(getParagraph());
+    }
   }
 });
 
