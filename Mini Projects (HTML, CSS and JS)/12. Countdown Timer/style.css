@@ -64,3 +64,6 @@ p:last-child {
   font-size: 0.8em;
   letter-spacing: 0.2rem;
 }
+.expired {
+  color: red;
+}
