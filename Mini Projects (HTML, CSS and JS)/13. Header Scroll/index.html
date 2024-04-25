@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Deepak S Ullagaddi" />
+    <meta name="description" content="Header Scroll" />
+    <title>Header Scroll</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div id="bg" class="bg">
+      <header class="header">
+        <img id="logo" class="logo" src="./logo.svg" alt="logo" title="logo" />
+        <nav>
+          <ul>
+            <li><a data-page="home" class="links" href="#home">Home</a></li>
+            <li><a data-page="about" class="links" href="#about">About</a></li>
+            <li>
+              <a data-page="services" class="links" href="#services"
+                >Services</a
+              >
+            </li>
+            <li><a data-page="tours" class="links" href="#tours">Tours</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="home" class="home">
+        <h1>SCROLL PROJECT</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+          neque sunt in? Id, necessitatibus quos quisquam distinctio laudantium
+          fugiat?
+        </p>
+        <a href="#tours" class="e-tours">EXPLORE TOURS</a>
+      </section>
+    </div>
+
+    <main>
+      <section id="about" class="about"><h2>ABOUT US</h2></section>
+      <section id="services" class="services"><h2>OUR SERVICES</h2></section>
+      <section id="tours" class="tours"><h2>FEATURED TOURS</h2></section>
+    </main>
+
+    <footer>
+      <p class="footer-text"></p>
+    </footer>
+    <a href="#bg" id="top-link" class=""><i class="fas fa-arrow-up"></i></a>
+  </body>
+</html>
