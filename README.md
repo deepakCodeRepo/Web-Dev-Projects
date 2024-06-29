@@ -1,2 +1,2 @@
 # Projects
- Front End Web Dev Projects
+ Mini Projects using HTML, CSS and JavaScript
